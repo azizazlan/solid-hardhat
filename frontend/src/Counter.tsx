@@ -13,12 +13,12 @@ import { ethers, Wallet } from "ethers";
 
 import counterJson from "./assets/artifacts/contracts/Counter.sol/Counter.json";
 
-const COUNTER_ADDR = "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9";
-const PRIVATE_KEY =
-  "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
+const COUNTER_ADDR = import.meta.env.VITE_APP_COUNTER_ADDR;
+const PRIVATE_KEY = import.meta.env.VITE_APP_PRIVATE_KEY;
+const GETH_URL = import.meta.env.VITE_APP_GETH_URL;
 
 export default function Counter() {
-  const provider = new ethers.JsonRpcProvider("http://127.0.0.1:8545");
+  const provider = new ethers.JsonRpcProvider(GETH_URL);
   const metaMaskWallet = new Wallet(PRIVATE_KEY, provider);
   const counter = new ethers.Contract(COUNTER_ADDR, counterJson.abi, provider);
   const [count, setCount] = createSignal(0);
