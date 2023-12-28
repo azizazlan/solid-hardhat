@@ -1,0 +1,30 @@
+{
+  "name": "solid-hardhat",
+  "version": "1.0.0",
+  "description": "SolidJS and Hardhat project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SolidJS",
+    "Hardhat",
+    "Ethereum",
+    "Solidity",
+    "Smart contracts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizazlan/solid-hardhat.git"
+  },
+  "author": "Azlan. Abdul Aziz <azizazlan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azizazlan/solid-hardhat/issues"
+  },
+  "homepage": "https://github.com/azizazlan/solid-hardhat#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.4"
+  }
+}
