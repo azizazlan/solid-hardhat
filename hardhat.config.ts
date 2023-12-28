@@ -6,6 +6,11 @@ const config: HardhatUserConfig = {
   paths: {
     artifacts: "./frontend/src/assets/artifacts",
   },
+  networks: {
+    hardhat: {
+      chainId: 1337,
+    },
+  },
 };
 
 export default config;

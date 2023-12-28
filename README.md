@@ -1,6 +1,6 @@
 # Solid-Hardhat
 
-My personal notes to create Hardhat and SolidJS projects.
+My personal notes to create Hardhat, OpenZeppelin and SolidJS projects.
 
 ## Steps to create this project.
 
@@ -38,3 +38,5 @@ My personal notes to create Hardhat and SolidJS projects.
       artifacts: "./frontend/src/assets/artifacts",
     },
     ```
+
+10. Install OpenZeppelin contract library `npm install @openzeppelin/contracts`.
